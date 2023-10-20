@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "com.github.misterboe.typo3livetemplates"
-version = "0.0.11"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
@@ -16,7 +16,7 @@ repositories {
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
     pluginName.set("TYPO3 Live Templates")
-    version.set("2022.1.4")
+    version.set("2023.2.3")
     type.set("IC") // Target IDE Platform
     plugins.set(listOf(/* Plugin Dependencies */))
 }
@@ -33,7 +33,7 @@ tasks {
 
     patchPluginXml {
         sinceBuild.set("221")
-        untilBuild.set("231.*")
+        untilBuild.set("232.*")
     }
 
     signPlugin {
